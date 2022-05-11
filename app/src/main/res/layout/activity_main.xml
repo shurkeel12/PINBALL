@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9">
+
+
+
+        <TableLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#A448"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/startGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="doStartGame"
+                android:focusableInTouchMode="true"
+                android:text="@string/start_game_button_label" />
+
+            <Button
+                android:id="@+id/resumeGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="doStartGame"
+                android:focusableInTouchMode="true"
+                android:text="@string/resume_game_button_label"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/endGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="doEndGame"
+                android:focusableInTouchMode="true"
+                android:text="@string/end_game_button_label"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/switchTableButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:maxLines="1"
+                android:onClick="doSwitchTable"
+                android:focusableInTouchMode="true"
+                android:text="@string/change_table_button_label" />
+        </TableLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
